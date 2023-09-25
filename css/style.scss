@@ -889,3 +889,113 @@ header{
         }
     }
 }
+
+.last-section {
+
+    padding-top: 120px;
+    background-color: #0E1021;
+    border-bottom: 1px solid #B6B7BC;
+    position: relative;
+
+    .line {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .container {
+
+        color: #B6B7BC;
+        padding-bottom: 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:    "logo logo"
+                                "box1 box2 "
+                                "box3 box4";
+        row-gap: 50px;
+        
+        @media (min-width: 1200px) {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "logo box1 box2 box3 box4";
+            
+        }
+
+
+    
+        .logo {
+            grid-area: logo;
+            margin-right: 120px;
+
+            .crito {
+                margin-bottom: 40px;
+            }
+        }
+
+        .box1 {
+            grid-area: box1;
+        }
+        .box2 {
+            grid-area: box2;
+        }
+        .box3 {
+            grid-area: box3;
+        }
+        .box4 {
+            grid-area: box4;
+        }
+
+        .boxes {
+            display: grid;
+
+            p {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+                color: #ffffff;
+            }
+
+            a {
+                text-decoration: none;
+                color: #B6B7BC;
+
+            }
+        }
+    }
+}
+
+footer {
+
+    background-color: #0E1021;
+
+    .container {
+
+        .the-foot {
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .crito {
+                color: #B6B7BC;
+                padding: 30px;
+            }
+
+            .social-media{
+    
+                a {  
+                    color:  #ffffff ;
+                    font-size: 1.3rem;
+                    margin-right: 25px;
+    
+                    &:hover{
+                        color: #B6B7BC;
+                    }                    
+                }
+            }
+        }
+    }
+}
