@@ -834,6 +834,223 @@ header{
     }
 }
 
+.yellow-section {
+
+    background-color: #F9D783;
+    padding-bottom: 120px;
+
+    .container {
+
+        .first-part {
+
+            padding-top: 125px;
+            text-align: center;
+
+            @media (min-width: 992px) {
+                text-align: left;
+            }
+
+            p {
+                color: #F94D1C;
+                
+            }
+
+            .h4-a {
+
+                
+                @media (min-width: 992px) {
+                    
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                h4 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 800;
+                    font-size: 45px;
+                    
+                    @media (max-width: 600px) {
+                        
+                        font-size: 25px;
+                    }
+
+                    @media (max-width: 992px) {
+                        margin-bottom: 30px;
+                        
+                    }
+                }
+                a {
+                    border: solid 1px black;
+                    font-weight: 500;
+
+                
+
+                }
+            }
+
+        }
+
+        .team {
+
+            padding-top: 100px;
+            display: grid;
+            grid-template-columns: auto auto ;
+            column-gap: 40px;
+
+            @media (min-width: 600px) {
+                grid-template-columns: auto auto auto auto;
+            }
+
+            .box {
+
+                img {
+
+                    padding-bottom: 30px;
+                    width: 100%;
+                    height: auto;
+                    
+
+                }
+                .name {
+
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 800;
+                    font-size: 22px;
+                    padding-bottom: 5px;
+                }
+
+                p {
+
+                }
+            }
+        }
+
+        .center-content {
+
+            padding-top: 20px;
+            padding-bottom: 80px;
+        }
+    }
+
+    .andra-container {
+
+        background-color: #ffffff;
+        padding-top: 50px;
+
+
+        .center-content {
+
+            display: block;
+            text-align: center;
+
+            p {
+
+                font-family: 'Inter', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                color: #F94D1C;
+
+            }
+
+            h5 {
+
+                font-family: 'DM Sans', sans-serif;
+                font-size: 45px;
+                font-weight: 700;
+                
+            }
+        }
+
+        .parent {
+
+            display: grid;
+            grid-template-columns: 1fr;
+
+            @media (min-width: 992px) {
+
+                grid-template-columns: 1fr 1fr 1fr;
+                
+            }
+            
+            .child {
+
+                margin-left: 50px;
+                margin-right: 50px;
+                padding-bottom: 50px;
+
+                @media (min-width: 992px) {
+
+                    padding-bottom: 25px;
+                    
+                }
+
+                img {
+
+                    padding-bottom: 15px;
+
+                    @media (min-width: 992px) {
+
+                        padding-bottom: 30px;
+                        
+                    }
+
+                }
+
+                p {
+
+                    padding-bottom: 10px;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+
+                    @media (min-width: 992px) {
+
+                        padding-bottom: 25px;
+                        
+                    }
+                }
+
+                .client {
+
+                    display: flex;
+
+                    img {
+
+                        padding-right: 20px;
+                    }
+
+                    .client-info {
+
+                        .name {
+
+                            font-family: 'DM Sans', sans-serif;
+                            font-size: 22px;
+                            font-weight: 700;
+
+                        }
+    
+                        p {
+                            
+                            color: #F94D1C;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+        .center-content {
+            padding-top: 70px;
+            padding-bottom: 120px;
+        }
+    }
+
+
+}
+
 .newsletter {
     background-color: #F0EFE9;
     position: relative;
