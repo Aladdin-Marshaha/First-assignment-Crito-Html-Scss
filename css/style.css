@@ -1042,12 +1042,15 @@ footer .container .the-foot .social-media a:hover {
   bottom: 0;
   left: 0;
   z-index: -1;
+  width: 40%;
+  height: auto;
 }
 
 .contact-information .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 390px));
   justify-content: center;
-  column-gap: 25px;
+  gap: 25px;
   padding-top: 120px;
   padding-bottom: 80px;
 }
@@ -1063,7 +1066,7 @@ footer .container .the-foot .social-media a:hover {
 }
 .contact-information .container .parent .child {
   margin-top: 45px;
-  margin-right: 110px;
+  margin-right: 80px;
   margin-bottom: 30px;
 }
 .contact-information .container .parent .child h5 {
