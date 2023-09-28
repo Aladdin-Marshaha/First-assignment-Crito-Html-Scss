@@ -335,12 +335,13 @@ header{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         margin-top: 90px;
-        margin-bottom: 90px;
+        margin-bottom: 90px; 
 
         img {
 
             padding-bottom: 35px;
             display: grid;
+            margin: auto;
 
         }
     } 
@@ -640,6 +641,9 @@ header{
             z-index: -1;
 
             display: none;
+
+            width: 80%;
+            height: auto;
 
             @media (min-width: 1200px) {
                     
@@ -1413,6 +1417,81 @@ footer {
                 }
             }
         }
+    }
+}
+
+.message {
+    
+    .container {
+
+        background-color: #F0EFE9;
+        margin-bottom: 120px;
+        padding-top: 140px;
+        justify-content: center;
+        align-items: center;
+
+
+        p {
+            text-align: center;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 45px;
+            margin-bottom: 0px;
+        }
+
+        form {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+
+
+
+            input {
+
+                outline: none;
+                width: 80%;
+                margin-top: 15px;
+                border: none;
+                border-radius: 25px;
+                padding: 15px;
+                padding-left: 40px;
+
+
+                &:hover {
+                    border: solid 1px black;
+                }
+               
+            }
+
+            textarea {
+
+                outline: none;
+
+                width: 80%;
+                margin-top: 15px;
+                border-radius: 25px;
+                border: none;
+                resize: none;
+                padding: 15px;
+                padding-left: 40px;
+
+                &:hover {
+                    border: solid 1px black;
+                }
+            }
+
+            button {
+
+                width: 80%;
+                margin-top: 40px;
+                margin-bottom: 100px;
+            }
+
+        }
+
     }
 }
 
