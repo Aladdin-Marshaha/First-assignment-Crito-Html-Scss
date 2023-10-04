@@ -18,6 +18,7 @@ html,body{
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
+    transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -26,8 +27,8 @@ html,body{
 
     &:hover{
         background-color: #191919;
-        border : 1px solid #191919;
         color: #F0EFE9;
+        transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
     }
 
 }
@@ -189,7 +190,7 @@ header{
                         margin-right: 10px;
 
                         &:hover{
-                            color: #DAD9D3;
+                            color: #433b3b93;
                         }
                         
                     }
@@ -290,22 +291,59 @@ header{
     .container {
 
         margin-top: 140px;
+        
 
         h2 {
             margin-bottom: 40px;
-
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 45px;
         }
 
         .parent {
 
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             gap: 30px;
             
+            @media (min-width: 768px) {
+
+                grid-template-columns: 1fr 1fr 1fr;
+                
+            }
+
             .child {
 
                 text-decoration: none;
                 color: #0E1021;
+
+                &:hover h3 {
+                    
+                    text-decoration: underline;
+                }
+
+                img {
+
+                    margin-bottom: 30px;
+                    margin-top: 20px;
+                    width: 100%;
+                    height: auto;
+                }
+
+                p {
+
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #707070;
+                }
+
+                h3 {
+
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
 
             }
         }
@@ -440,6 +478,10 @@ header{
                 text-decoration: none;
                 color: #B6B7BC;
 
+                &:hover {
+                    
+                    text-decoration: underline;
+                }
             }
         }
     }

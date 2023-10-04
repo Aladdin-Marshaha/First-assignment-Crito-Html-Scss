@@ -16,6 +16,7 @@ html, body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
+  transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
 }
 .btn-yellow i {
   margin-left: 8px;
@@ -23,8 +24,8 @@ html, body {
 }
 .btn-yellow:hover {
   background-color: #191919;
-  border: 1px solid #191919;
   color: #F0EFE9;
+  transition: background-color 0.3s ease-in-out, color 0.2s ease-in-out;
 }
 
 .btn-black {
@@ -166,7 +167,7 @@ header .container .menu .top-menu .social-media a {
   margin-right: 10px;
 }
 header .container .menu .top-menu .social-media a:hover {
-  color: #DAD9D3;
+  color: rgba(67, 59, 59, 0.5764705882);
 }
 header .container .menu .main-menu {
   display: flex;
@@ -243,15 +244,43 @@ header .container .menu .main-menu .btn-login {
 }
 .our-news-and-articles .container h2 {
   margin-bottom: 40px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
 }
 .our-news-and-articles .container .parent {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+@media (min-width: 768px) {
+  .our-news-and-articles .container .parent {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 .our-news-and-articles .container .parent .child {
   text-decoration: none;
   color: #0E1021;
+}
+.our-news-and-articles .container .parent .child:hover h3 {
+  text-decoration: underline;
+}
+.our-news-and-articles .container .parent .child img {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
+.our-news-and-articles .container .parent .child p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #707070;
+}
+.our-news-and-articles .container .parent .child h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 .newsletter {
@@ -358,6 +387,9 @@ header .container .menu .main-menu .btn-login {
 .last-section .container .boxes a {
   text-decoration: none;
   color: #B6B7BC;
+}
+.last-section .container .boxes a:hover {
+  text-decoration: underline;
 }
 
 footer {
