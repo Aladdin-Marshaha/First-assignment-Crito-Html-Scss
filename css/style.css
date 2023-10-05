@@ -498,10 +498,14 @@ header .container .menu .main-menu .btn-login {
   }
 }
 .about-company .container .right .buttons .btn-black {
-  margin-right: 35px;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+}
+@media (min-width: 400px) {
+  .about-company .container .right .buttons .btn-black {
+    margin-right: 35px;
+  }
 }
 .about-company .container .right .buttons .btn-black:hover {
   cursor: pointer;
@@ -818,7 +822,9 @@ header .container .menu .main-menu .btn-login {
   padding-top: 100px;
   display: grid;
   grid-template-columns: auto auto;
+  grid-template-rows: auto;
   column-gap: 10px;
+  grid-auto-flow: dense;
 }
 @media (min-width: 576px) {
   .yellow-section .container .team {
@@ -962,16 +968,17 @@ header .container .menu .main-menu .btn-login {
 .article-and-news .container .first-part .h4-a h4 {
   font-family: "DM Sans", sans-serif;
   font-weight: 800;
-  font-size: 45px;
+  font-size: 40px;
+  margin-bottom: 40px;
 }
-@media (max-width: 600px) {
+@media (min-width: 576px) {
   .article-and-news .container .first-part .h4-a h4 {
-    font-size: 25px;
+    font-size: 45px;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .article-and-news .container .first-part .h4-a h4 {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
 }
 .article-and-news .container .parent {
@@ -1233,8 +1240,13 @@ footer .container .the-foot .social-media a:hover {
   text-align: center;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 35px;
   margin-bottom: 0px;
+}
+@media (min-width: 576px) {
+  .message .container p {
+    font-size: 45px;
+  }
 }
 .message .container form {
   display: flex;

@@ -268,7 +268,7 @@ header{
             font-size: 40px;
             z-index: 1;
 
-            @media (min-width: 570px) {
+            @media (min-width: 576px) {
 
                 font-size: 56px;
                 
@@ -290,9 +290,14 @@ header{
 .our-news-and-articles {
     .container {
 
-        margin-top: 140px;
-        
+        margin-top: 80px;
 
+        @media (min-width: 576px) {
+
+            margin-top: 140px;
+            
+        }
+        
         h2 {
             margin-bottom: 40px;
             font-family: 'DM Sans', sans-serif;
@@ -303,8 +308,14 @@ header{
         .parent {
 
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 30px;
+
+            @media (min-width: 576px) {
+
+                grid-template-columns: 1fr 1fr;
+                
+            }            
             
             @media (min-width: 768px) {
 
@@ -381,9 +392,14 @@ header{
 
         h2 {
 
-            font-size: 45px;
+            font-size: 35px;
             font-weight: 700;
             font-family: 'DM Sans', sans-serif;
+
+            @media (min-width: 576px) {
+
+                font-size: 45px;
+            }
         }
 
         form {
